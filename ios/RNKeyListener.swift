@@ -6,16 +6,15 @@
 //  Copyright © 2024 Facebook. All rights reserved.
 //
 
-
 @objc class RNKeyListener: UIViewController {
-    override func pressesBegan(_ presses: Set<UIPress>) {
+    override func pressesBegan(_ presses: Set<UIPress>,  with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
 //            sendEvent(name: "keyUp", body: key)
         }
         
     }
-    ovveride func pressesEnded(_ presses: Set<UIPress>) {
+    override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
 //            sendEvent(name: "keyDown", body: key)
