@@ -6,7 +6,6 @@
 //  Copyright © 2024 Facebook. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "React/RCTBridgeModule.h"
 #import "React/RCTEventEmitter.h"
 
