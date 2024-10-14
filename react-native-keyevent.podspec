@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.source       = { git: 'https://github.com/kevinejohn/react-native-keyevent.git', tag: s.version.to_s }
 
-  s.source_files = 'ios/**/*.{h,m}'
+  s.source_files = 'ios/**/*.{swift,h,mm}'
   s.requires_arc = true
 
   s.dependency 'React'

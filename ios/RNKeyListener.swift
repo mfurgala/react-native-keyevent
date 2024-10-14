@@ -8,17 +8,18 @@
 
 @objc(RNKeyListener)
 class RNKeyListener: UIViewController {
+    let keyEventClass = RNKeyEvent();
     override func pressesBegan(_ presses: Set<UIPress>,  with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
-//            sendEvent(name: "keyUp", body: key)
+            keyEventClass.sendEvent(withName: "keyUp", body: key)
         }
-        
+
     }
     override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
-//            sendEvent(name: "keyDown", body: key)
+//            keyEventClass.sendEvent(withName: "keyDown", body: key)
         }
     }
 }
