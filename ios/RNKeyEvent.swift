@@ -22,9 +22,13 @@ class RNKeyEvent: RCTEventEmitter {
 
     @objc
     override func supportedEvents() -> [String]! {
-      ["onKeyDownListener", "onKeyUpListener"]
+      ["onKeyDown", "onKeyUp"]
     }
 
+    @objc override static func requiresMainQueueSetup() -> Bool {
+        return false
+
+    }
     @objc func onKeyDownListener(keyCode: String ) {
             sendEvent(withName: "keyDown", body: keyCode)
         }

@@ -6,13 +6,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RNKeyListener : UIViewController <NativeKeyListenerSpec>
-
+void testing();
 NS_ASSUME_NONNULL_END
 
 #else
 #import <UIKit/UIKit.h>
 
 @interface RNKeyListener : UIViewController
+
+void testing();
+
 #endif
 
 
