@@ -10,9 +10,6 @@ import UIKit
 
 @objc(RNKeyEvent)
 class RNKeyEvent: RCTEventEmitter {
-    @objc public func someFunction() {
-           // Your function implementation
-       }
     var hasListener: Bool = false
 
     override func startObserving() {
@@ -27,11 +24,11 @@ class RNKeyEvent: RCTEventEmitter {
     override func supportedEvents() -> [String]! {
       ["onKeyDownListener", "onKeyUpListener"]
     }
-//
-//    @objc func onKeyDown(keyCode: String ) {
-//            sendEvent(withName: "keyDown", body: keyCode)
-//        }
-//    @objc func onKeyUp(keyCode: String) {
-//            sendEvent(withName: "keyUp", body: keyCode)
-//        }
+
+    @objc func onKeyDownListener(keyCode: String ) {
+            sendEvent(withName: "keyDown", body: keyCode)
+        }
+    @objc func onKeyUpListener(keyCode: String) {
+            sendEvent(withName: "keyUp", body: keyCode)
+        }
 }

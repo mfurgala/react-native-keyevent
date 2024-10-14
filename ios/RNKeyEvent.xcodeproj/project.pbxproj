@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		905BCF3C2CBD506500A3C86C /* RNKeyEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 905BCF3B2CBD506500A3C86C /* RNKeyEvent.mm */; };
 		90BBCD252CAC3194005AD6BE /* RNKeyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBCD242CAC3194005AD6BE /* RNKeyEvent.swift */; };
 		90BBCD272CAC31E3005AD6BE /* RNKeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BBCD262CAC31E3005AD6BE /* RNKeyListener.swift */; };
-		90BBCD292CAC41D5005AD6BE /* RNKeyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BBCD282CAC41D5005AD6BE /* RNKeyEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +26,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNKeyEvent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNKeyEvent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		905BCF3B2CBD506500A3C86C /* RNKeyEvent.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RNKeyEvent.mm; sourceTree = "<group>"; };
+		905BCF3D2CBD50A700A3C86C /* RNKeyListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNKeyListener.h; sourceTree = "<group>"; };
 		90BBCD232CAC3194005AD6BE /* RNKeyEvent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNKeyEvent-Bridging-Header.h"; sourceTree = "<group>"; };
 		90BBCD242CAC3194005AD6BE /* RNKeyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNKeyEvent.swift; sourceTree = "<group>"; };
 		90BBCD262CAC31E3005AD6BE /* RNKeyListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNKeyListener.swift; sourceTree = "<group>"; };
-		90BBCD282CAC41D5005AD6BE /* RNKeyEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNKeyEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +55,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				90BBCD282CAC41D5005AD6BE /* RNKeyEvent.m */,
+				905BCF3B2CBD506500A3C86C /* RNKeyEvent.mm */,
+				905BCF3D2CBD50A700A3C86C /* RNKeyListener.h */,
 				90BBCD242CAC3194005AD6BE /* RNKeyEvent.swift */,
 				90BBCD262CAC31E3005AD6BE /* RNKeyListener.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -120,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90BBCD292CAC41D5005AD6BE /* RNKeyEvent.m in Sources */,
+				905BCF3C2CBD506500A3C86C /* RNKeyEvent.mm in Sources */,
 				90BBCD252CAC3194005AD6BE /* RNKeyEvent.swift in Sources */,
 				90BBCD272CAC31E3005AD6BE /* RNKeyListener.swift in Sources */,
 			);

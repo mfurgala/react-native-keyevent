@@ -12,14 +12,13 @@ class RNKeyListener: UIViewController {
     override func pressesBegan(_ presses: Set<UIPress>,  with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
-            keyEventClass.sendEvent(withName: "keyUp", body: key)
+            keyEventClass.onKeyDownListener(keyCode: key.charactersIgnoringModifiers)
         }
-
     }
     override func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         for press in presses {
             guard let key = press.key else { continue }
-//            keyEventClass.sendEvent(withName: "keyDown", body: key)
+            keyEventClass.onKeyUpListener(keyCode: key.charactersIgnoringModifiers)
         }
     }
 }
